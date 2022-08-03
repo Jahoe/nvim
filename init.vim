@@ -44,7 +44,7 @@ call plug#end()
 colorscheme tokyonight
 
 " Telescope" Find files using Telescope command-line sugar.
-nnoremap ff <cmd>; Telescope find_files<er>
-nnoremap fg <cmd>: Telescope live_grep<er>
-nnoremap fb <cd>: Telescope buffers<cr>
-nnoremap fh <cmd>; Telescope help_tags<cr>
+nnoremap <leader>ff <cmd>; Telescope find_files<cr>
+nnoremap <leader>fg <cmd>: Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>: Telescope buffers<cr>
+nnoremap <leader>fh <cmd>; Telescope help_tags<cr>
