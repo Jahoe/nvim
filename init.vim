@@ -50,3 +50,13 @@ nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
 nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
+
+nnoremap <leader>1 <cmd>BufferGoto 1<cr>
+nnoremap <leader>2 <cmd>BufferGoto 2<cr>
+nnoremap <leader>3 <cmd>BufferGoto 3<cr>
+nnoremap <leader>4 <cmd>BufferGoto 4<cr>
+nnoremap <leader>5 <cmd>BufferGoto 5<cr>
+nnoremap <leader>tq <cmd>BufferPrevious<cr>
+nnoremap <leader>te <cmd>BufferNext<cr>
+nnoremap <leader>tc <cmd>:BufferClose<cr>
+nnoremap <leader>tp <cmd>:BufferPin<cr>
