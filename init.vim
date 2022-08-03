@@ -18,8 +18,8 @@ set ttyfast                 " Speed up scrolling in Vim
 set spell                   " enable spell check (may need to download language package)
 set noswapfile              " disable creating swap file
 set backupdir=~/.cache/vim  " Directory to store backup files
-set timeoutlen=1000
-set timeoutlen=10
+set timeoutlen=3000
+set ttimeoutlen=100
 set t_Co=256
 set encoding=UTF-8
 filetype plugin indent on   " allow auto-indenting depending on file type
@@ -44,7 +44,9 @@ call plug#end()
 colorscheme tokyonight
 
 " Telescope" Find files using Telescope command-line sugar.
-nnoremap <leader>ff <cmd>; Telescope find_files<cr>
-nnoremap <leader>fg <cmd>: Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>: Telescope buffers<cr>
-nnoremap <leader>fh <cmd>; Telescope help_tags<cr>
+nnoremap <SPACE> <Nop>
+let mapleader = " "
+nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
+nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
+nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
