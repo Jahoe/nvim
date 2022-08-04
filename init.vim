@@ -51,12 +51,17 @@ nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 
-nnoremap <leader>1 <cmd>BufferGoto 1<cr>
-nnoremap <leader>2 <cmd>BufferGoto 2<cr>
-nnoremap <leader>3 <cmd>BufferGoto 3<cr>
-nnoremap <leader>4 <cmd>BufferGoto 4<cr>
-nnoremap <leader>5 <cmd>BufferGoto 5<cr>
-nnoremap <leader>tq <cmd>BufferPrevious<cr>
-nnoremap <leader>te <cmd>BufferNext<cr>
-nnoremap <leader>tc <cmd>:BufferClose<cr>
-nnoremap <leader>tp <cmd>:BufferPin<cr>
+nnoremap 1 <cmd>BufferGoto 1<cr>
+nnoremap 2 <cmd>BufferGoto 2<cr>
+nnoremap 3 <cmd>BufferGoto 3<cr>
+nnoremap 4 <cmd>BufferGoto 4<cr>
+nnoremap 5 <cmd>BufferGoto 5<cr>
+nnoremap 6 <cmd>BufferGoto 6<cr>
+nnoremap 7 <cmd>BufferGoto 7<cr>
+nnoremap 8 <cmd>BufferGoto 8<cr>
+nnoremap 9 <cmd>BufferGoto 9<cr>
+nnoremap 0 <cmd>BufferGoto 10<cr>
+nnoremap <leader>q <cmd>BufferPrevious<cr>
+nnoremap <leader>e <cmd>BufferNext<cr>
+nnoremap <leader>c <cmd>:BufferClose<cr>
+nnoremap <leader>p <cmd>:BufferPin<cr>
